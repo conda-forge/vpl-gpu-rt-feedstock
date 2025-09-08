@@ -1,5 +1,5 @@
 context:
-  version: "25.2.6"
+  version: "25.3.3"
 
 package:
   name: vpl-gpu-rt
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/intel/vpl-gpu-rt/archive/refs/tags/intel-onevpl-${{ version }}.tar.gz
-  sha256: d236ede2ab87063d0d8d52932779ff446a885b8dc4ef840d1a756c6776ef6fef
+  sha256: 45061880420692133ddbae3b21c40fc4cf7f8115947c0baa49e767f695d1e91e
 
 build:
   skip:
@@ -32,8 +32,8 @@ requirements:
 
 tests:
   - script:
-    - test -f ${PREFIX}/lib/libmfx-gen.so
-    - test -f ${PREFIX}/lib/libmfx-gen/enctools.so
+      - test -f ${PREFIX}/lib/libmfx-gen.so
+      - test -f ${PREFIX}/lib/libmfx-gen/enctools.so
 
 about:
   homepage: https://github.com/intel/vpl-gpu-rt
