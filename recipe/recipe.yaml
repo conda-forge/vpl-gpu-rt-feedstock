@@ -1,5 +1,5 @@
 context:
-  version: "26.1.4"
+  version: "26.1.5"
 
 package:
   name: vpl-gpu-rt
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/intel/vpl-gpu-rt/archive/refs/tags/intel-onevpl-${{ version }}.tar.gz
-  sha256: 1d567932451ed179a7f146677a48219cdc241787dcc72528e7ae8bff2804b8a1
+  sha256: d2f297dc03d4e5585bee75ce3bafc5c8a35b30ac60ff7d6b49c1ed6f6b8152a3
 
 build:
   skip:
